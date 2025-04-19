@@ -204,3 +204,32 @@ public class JavaLoop {
 
 }
 ```
+# questao 7
+```java
+package javaloop;
+
+/**
+ * Soma dos números ímpares: 7. Escreva um programa que calcule a soma dos
+ * números ímpares de 1 a 200 utilizando um loop for.
+ *
+ * @author Henrique
+ */
+public class JavaLoop {
+
+    public static void main(String[] args) {
+        int n, soma;
+        n = 1;
+        soma = 0;
+
+        for (n = 1; n <= 200; n++) {
+            if (n % 2 != 0) {
+                soma += n;
+            }
+        }
+        System.out.println("A soma dos numeros impares de 1 a 200:" + soma);
+
+    }
+
+}
+
+```
