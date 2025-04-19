@@ -165,3 +165,42 @@ public class JavaLoop {
 
 }
 ```
+# questao 6
+```java
+package javaloop;
+
+import java.util.Scanner;
+
+/**
+ * Tabuada de multiplicação: 6. Escreva um programa que exiba a tabuada de
+ * multiplicação de um número fornecido pelo usuário usando um loop for. Você
+ * deve informar o numero e de quanto a quanto você quer fazer a tabuada por
+ * exemplo: tabuada do 2 de 1 a 20.
+ *
+ * @author Henrique
+ */
+public class JavaLoop {
+
+    public static void main(String[] args) {
+        int n, inicio, fim, i;
+        Scanner ler = new Scanner(System.in);
+
+        System.out.println("Digite um numero:");
+        n = ler.nextInt();
+        System.out.println("Digite o inicio da tabuada:");
+        inicio = ler.nextInt();
+        System.out.println("Digite o fim da tabuada");
+        fim = ler.nextInt();
+
+        if (inicio >= fim) {
+            System.out.println("O inicio da tabuada não deve ser maior ou igual");
+        } else {
+            System.out.println("Tabuado do " + n + " de " + inicio + " ate " + fim + ":");
+            for (i = inicio; i <= fim; i++) {
+                System.out.println(n + " x " + i + " = " + (n * i));
+            }
+        }
+    }
+
+}
+```
