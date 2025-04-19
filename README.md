@@ -123,3 +123,45 @@ public class TecnicaDeXiru {
     }
 }
 ```
+# questao 5
+```java
+package javaloop;
+
+import java.util.Scanner;
+
+/**
+ * Jogo de adivinhação: 5. Escreva um programa que implemente um jogo de
+ * adivinhação onde o usuário deve adivinhar um número entre 1 e 100, utilizando
+ * um loop do-while para repetir até que o usuário acerte o número. O numero da
+ * sorte deverá ser randomizado pelo computador, pesquise como funciona a
+ * biblioteca Math.random()
+ *
+ * @author Henrique
+ */
+public class JavaLoop {
+
+    public static void main(String[] args) {
+        int nSorte, n;
+        boolean achou;
+        Scanner ler = new Scanner(System.in);
+        achou = false;
+
+        //Para nao dá loop no Math.random
+        nSorte = 1 + (int) (Math.random() * 100);
+        do {
+            System.out.println("Digite seu numero da sorte de 1 a 100:");
+            n = ler.nextInt();
+            if (n == nSorte) {
+                System.out.println("VOCÊ ACERTOU-PARABENS");
+                achou = true;
+            } else {
+                System.out.println("ERROU XIRU!");
+                System.out.println(nSorte);
+            }
+        } while (!achou);
+        //enquanto ele for verdadeiro ele mantem o loop ate achar
+
+    }
+
+}
+```
